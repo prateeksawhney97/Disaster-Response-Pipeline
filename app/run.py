@@ -2,8 +2,10 @@ import json
 import plotly
 import pandas as pd
 
+import nltk
 from nltk.stem import WordNetLemmatizer
-from nltk.tokenize import word_tokenize
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk import pos_tag, word_tokenize
 
 from flask import Flask
 from flask import render_template, request, jsonify
@@ -42,6 +44,9 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+
+    disaster_names = list(df.columns[4:])
+    disaster_counts = df[disaster_names].sum()
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -63,7 +68,26 @@ def index():
                     'title': "Genre"
                 }
             }
-        }
+        },
+        {
+            'data': [
+                Bar(
+                    x=disaster_names,
+                    y=disaster_counts
+                )
+            ],
+            
+            'layout': {
+                'title': 'Distribution of Disaster',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Disaster"
+                }
+            }
+        },
+        
     ]
     
     # encode plotly graphs in JSON
