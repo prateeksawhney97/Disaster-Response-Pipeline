@@ -86,3 +86,7 @@ git clone git@github.com:prateeksawhney97/Disaster-Response-Pipeline.git
 ##### 2. Classify Messages Page
 
 ![Screenshot from 2020-05-12 22-58-46](https://user-images.githubusercontent.com/34116562/81772761-4c41a600-9504-11ea-88af-90ecd9eb4ff5.png)
+
+![Screenshot from 2020-05-12 22-58-56](https://user-images.githubusercontent.com/34116562/81772878-9b87d680-9504-11ea-8190-b9e4c8ae9e5b.png)
+![Screenshot from 2020-05-12 22-58-59](https://user-images.githubusercontent.com/34116562/81772887-9fb3f400-9504-11ea-8ed5-aae7f9d51e2d.png)
+
