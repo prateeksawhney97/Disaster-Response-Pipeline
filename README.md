@@ -20,8 +20,8 @@ The data has been encoded with 36 different categories related to disaster respo
 
 Data includes 2 csv files:
 
-disaster_messages.csv: Messages data.
-disaster_categories.csv: Disaster categories of messages.
+1. disaster_messages.csv: Messages data.
+2. disaster_categories.csv: Disaster categories of messages.
 
 ### Folder Structure:
 
