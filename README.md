@@ -12,6 +12,19 @@ The Project is divided into the following Sections:
 2. Machine Learning Pipeline to train a model which is able to classify text messages in 36 categories.
 3. Web Application using Flask to show model results and predictions in real time.
 
+### Data
+
+The data in this project comes from Figure Eight - Multilingual Disaster Response Messages. This dataset contains 30,000 messages drawn from events including an earthquake in Haiti in 2010, an earthquake in Chile in 2010, floods in Pakistan in 2010, super-storm Sandy in the U.S.A. in 2012, and news articles spanning a large number of years and 100s of different disasters.
+
+The data has been encoded with 36 different categories related to disaster response and has been stripped of messages with sensitive information in their entirety.
+
+Data includes 2 csv files:
+
+disaster_messages.csv: Messages data.
+disaster_categories.csv: Disaster categories of messages.
+
+### 
+
 ### Installation:
 
 This project requires Python 3.x and the following Python libraries:
