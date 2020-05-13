@@ -2,6 +2,8 @@
 
 ## Udacity Data Scientist Nanodegree
 
+### Youtube - https://youtu.be/wBNYrd1gQH0
+
 ### Description:
 
 This Project is a part of Data Science Nanodegree Program by Udacity in collaboration with Figure Eight. The initial dataset contains pre-labelled tweet and messages from real-life disasters. The aim of this project is to build a Natural Language Processing tool that categorize messages.
