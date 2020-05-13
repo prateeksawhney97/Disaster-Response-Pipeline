@@ -12,6 +12,12 @@ The Project is divided into the following Sections:
 2. Machine Learning Pipeline to train a model which is able to classify text messages in 36 categories.
 3. Web Application using Flask to show model results and predictions in real time.
 
+### Installing
+
+Clone this repository
+
+
+
 ### Instructions:
 1. Run the following commands in the project's root directory to set up your database and model.
 
