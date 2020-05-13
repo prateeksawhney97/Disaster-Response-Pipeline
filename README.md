@@ -49,14 +49,10 @@ Data includes 2 csv files:
 
 This project requires Python 3.x and the following Python libraries:
 
-1. Pandas
-2. Scikit-learn
-3. NLTK
-4. SQLAlchemy
-5. Plotly
-6. Flask
-7. Numpy
-
+* Machine Learning Libraries: NumPy, SciPy, Pandas, Sciki-Learn
+* Natural Language Process Libraries: NLTK
+* SQLlite Database Libraqries: SQLalchemy
+* Web App and Data Visualization: Flask, Plotly
 
 ### Instructions:
 
