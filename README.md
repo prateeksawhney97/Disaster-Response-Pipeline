@@ -27,23 +27,23 @@ Data includes 2 csv files:
 
 * app
     * | - templates
-        * | |- master.html # main page of web application
-        * | |- go.html # classification result page of web application
+        * |- master.html # main page of web application
+        * |- go.html # classification result page of web application
     * |- run.py # Flask file that runs application
 
-data
-|- disaster_categories.csv # data to process
-|- ML Pipeline Preparation.ipynb
-|- ETL Pipeline Preparation.ipynb
-|- disaster_messages.csv # data to process
-|- process_data.py
-|- Disaster_Response.db # database to save clean data to
+* data
+   * |- disaster_categories.csv # data to process
+   * |- ML Pipeline Preparation.ipynb
+   * |- ETL Pipeline Preparation.ipynb
+   * |- disaster_messages.csv # data to process
+   * |- process_data.py
+   * |- Disaster_Response.db # database to save clean data to
+   
+* models
+   * |- train_classifier.py
+   * |- classifier.pkl # saved model
 
-models
-|- train_classifier.py
-|- classifier.pkl # saved model
-
-README.md
+* README.md
 
 ### Installation:
 
