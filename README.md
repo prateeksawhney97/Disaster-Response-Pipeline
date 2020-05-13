@@ -94,3 +94,11 @@ PREDICTED CLASSES-
 ![Screenshot from 2020-05-12 22-58-56](https://user-images.githubusercontent.com/34116562/81772878-9b87d680-9504-11ea-8190-b9e4c8ae9e5b.png)
 ![Screenshot from 2020-05-12 22-58-59](https://user-images.githubusercontent.com/34116562/81772887-9fb3f400-9504-11ea-8ed5-aae7f9d51e2d.png)
 
+INPUT- (EXAMPLE-2)
+
+![Screenshot from 2020-05-12 22-59-10](https://user-images.githubusercontent.com/34116562/81773045-13560100-9505-11ea-8a95-f0992ec2236e.png)
+
+PREDICTED CLASSES- 
+
+![Screenshot from 2020-05-12 22-59-18](https://user-images.githubusercontent.com/34116562/81773048-14872e00-9505-11ea-874f-b5fa49ac5d28.png)
+
