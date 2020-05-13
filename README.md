@@ -25,11 +25,11 @@ Data includes 2 csv files:
 
 ### Folder Structure:
 
-app
-| - templates
-| |- master.html # main page of web application
-| |- go.html # classification result page of web application
-|- run.py # Flask file that runs application
+* app
+    *| - templates
+        *| |- master.html # main page of web application
+        *| |- go.html # classification result page of web application
+    *|- run.py # Flask file that runs application
 
 data
 |- disaster_categories.csv # data to process
