@@ -105,6 +105,11 @@ PREDICTED CLASSES-
 
 INPUT- Please help us with food and water (EXAMPLE-3)
 
+![Screenshot from 2020-05-12 23-00-55](https://user-images.githubusercontent.com/34116562/81773447-e3f3c400-9505-11ea-966a-e83099565f2a.png)
 
 
 PREDICTED CLASSES- 
+
+![Screenshot from 2020-05-12 23-00-59](https://user-images.githubusercontent.com/34116562/81773451-e6eeb480-9505-11ea-93c3-f44885c83960.png)
+
+![Screenshot from 2020-05-12 23-01-03](https://user-images.githubusercontent.com/34116562/81773456-e9e9a500-9505-11ea-80b1-abd9c49830c2.png)
