@@ -21,6 +21,10 @@ from sklearn.pipeline import Pipeline, FeatureUnion
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 
+from sklearn.metrics import make_scorer, accuracy_score, f1_score, fbeta_score
+from scipy.stats import hmean
+from scipy.stats.mstats import gmean
+
 nltk.download(['punkt', 'wordnet','stopwords'])
 nltk.download(['averaged_perceptron_tagger'])
 
