@@ -90,6 +90,13 @@ class StartingVerbExtractor(BaseEstimator, TransformerMixin):
 
 
 def model_pipeline():
+    """
+        - Build pipeline for creating model
+        
+        Returns:
+            pipeline_modified: Pipeline for creating the model
+    """
+    # Build pipeline
     pipeline_modified = Pipeline([
             ('features', FeatureUnion([
 
@@ -108,7 +115,14 @@ def model_pipeline():
 
 
 def build_model():
+    """
+        - Build the model with the proposed parameters
+        
+        Returns:
+            cv (GridSearchCV): Machine learning model
+    """
     model = model_pipeline()
+    # Parameter selection using GridSearchCV
     parameters = {
         'features__text_pipeline__vect__ngram_range': ((1, 1), (1, 2)),
         'features__text_pipeline__vect__max_df': (0.5, 0.75, 1.0),
@@ -127,6 +141,16 @@ def build_model():
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
+    """
+        - Evaluate model
+        
+        Args:
+            model (Predicter model): Machine learning model (Predicter)
+            X_test (pandas series): Test data set of X
+            Y_test (pandas dataframe): Test data set of Y
+            category_names (list): Name of categories
+    """
+    # Predict test data
     predict_y = model.predict(X_test)
     
     # Evaluate
@@ -137,6 +161,13 @@ def evaluate_model(model, X_test, Y_test, category_names):
 
 
 def save_model(model, model_filepath):
+    """
+        - Saves model in pickle file
+        
+        Args:
+            model (Predicter model): Machine learning model (Predicter)
+            model_filepath (str): Path where model will save.
+    """
     with open(model_filepath, 'wb') as file:  
         pickle.dump(model, file)
 
