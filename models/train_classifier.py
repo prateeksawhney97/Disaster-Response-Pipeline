@@ -25,15 +25,38 @@ nltk.download(['punkt', 'wordnet','stopwords'])
 nltk.download(['averaged_perceptron_tagger'])
 
 def load_data(database_filepath):
+    """
+        - Load cleaned data from database into dataframe
+        - Extract X, Y data
+        
+        Args:
+            database_filepath (str): File path of database
+            
+        Returns:
+            X (pandas dataframe): Contains messages
+            Y (pandas dataframe): Contains categories of disaster
+            category_names (list): Name of categories
+    """
+    # Load data from database
     engine = create_engine('sqlite:///' + database_filepath)
-    engine.dispose()
+    #engine.dispose()
     df = pd.read_sql_table("Disaster_Response", engine)
+    # Extract X and Y
     X = df["message"]
     Y = df.drop(["id", "message", "original", "genre"], axis=1)
     category_names = Y.columns.tolist()
     return X, Y, category_names
 
 def tokenize(text):
+    """
+        - Tokenize text
+        
+        Args:
+            text (str): Message string
+            
+        Returns:
+            tokens (list): List of tokens
+    """
     #converting all the text to lowercase
     text.lower()
     # removing punctuation characters from the text and replacing them with an empty space
